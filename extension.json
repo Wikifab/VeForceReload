@@ -1,0 +1,34 @@
+{
+	"name": "VeForceReload",
+	"version": "1.0.0",
+	"author": [
+		"Pierre Boutet"
+	],
+	"url": "https://github.com/wikifab/VeForceReload",
+	"descriptionmsg": "veforcereload-desc",
+	"license-name": "MIT",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.28.0"
+	},
+	"MessagesDirs": {
+	},
+	"Hooks": {
+		"BeforePageDisplay":"VeForceReload\\Hooks::onBeforePageDisplay"
+	},
+	"ResourceModules": {
+		"ext.veforcereload.js": {
+			"scripts": [
+				"resources/veforcereload.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "VeForceReload"
+	},
+	"AutoloadClasses": {
+		"VeForceReload\\Hooks": "includes/Hooks.php"
+	},
+	"manifest_version": 1
+}

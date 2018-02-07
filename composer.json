@@ -1,0 +1,8 @@
+{
+    "name": "wikifab/ve-force-reload",
+    "description": "Mediawiki extension to force page reload after edit with Visual Editor",
+    "type": "mediawiki-extension",
+    "license": "MIT",
+    "require": {
+    }
+}
